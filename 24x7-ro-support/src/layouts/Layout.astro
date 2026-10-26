@@ -3,21 +3,21 @@ import '../styles/global.css';
 import Header from '../components/Header.astro';
 import StickyBottomBar from '../components/StickyBottomBar.astro';
 
-// Yahan themeColor prop receive kar rahe hain
-const { themeColor = 'blue' } = Astro.props;
+// Local font import (Google Fonts network request fix)
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
+import '@fontsource/inter/700.css';
+import '@fontsource/inter/800.css';
 ---
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Bangalore's trusted multi-brand RO water purifier repair, maintenance, installation, and AMC service provider." />
+		<meta name="description" content="Bangalore's trusted multi-brand RO water purifier repair, maintenance, installation, and AMC service provider. 60-min doorstep service with 90-day warranty." />
 		<title>24x7 RO Service Department | Bangalore's Top Water Purifier Repair</title>
 		
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
 		<script type="application/ld+json">
 		{
 			"@context": "https://schema.org",
@@ -42,10 +42,9 @@ const { themeColor = 'blue' } = Astro.props;
 		}
 		</script>
 	</head>
-	<body class="bg-white text-gray-800 font-sans antialiased">
+	<body class="bg-white text-gray-800 font-sans antialiased pb-28 md:pb-0">
 		
-		<!-- Yahan prop pass kar rahe hain -->
-		<Header themeColor={themeColor} />
+		<Header />
 		
 		<main class="min-h-screen">
 			<slot /> 
