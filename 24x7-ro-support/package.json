@@ -12,6 +12,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource/inter": "^5.2.5",
     "@iconify-json/lucide": "^1.2.147",
     "astro": "^7.4.2",
     "astro-icon": "^1.2.0"
