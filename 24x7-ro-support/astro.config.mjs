@@ -1,10 +1,16 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 
+// https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
   build: {
     inlineStylesheets: 'always',
   },
-  // devToolbar: false,  <-- Is line ko delete kar do
+  vite: {
+    ssr: {
+      // Ye line Vercel ko font bundle karne ko bolti hai
+      noExternal: ['@fontsource/*'] 
+    }
+  }
 });
