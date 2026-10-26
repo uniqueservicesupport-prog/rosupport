@@ -4,7 +4,7 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   integrations: [tailwind()],
   build: {
-    inlineStylesheets: 'always', // CSS inline karega (Performance fix)
+    inlineStylesheets: 'always',
   },
-  devToolbar: false
+  // devToolbar: false,  <-- Is line ko delete kar do
 });
