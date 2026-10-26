@@ -1,30 +1,34 @@
-<!-- FLOATING PILL BUTTONS (Right Side - Mobile Only) -->
-<div class="fixed bottom-20 right-3 z-[100] flex flex-col items-end gap-2.5 md:hidden pointer-events-none">
+<!-- FLOATING BUTTONS (Right Side, Stacked) -->
+<div class="fixed bottom-[76px] right-4 z-[100] flex flex-col items-end gap-2.5 md:hidden">
   
-  <!-- WhatsApp Button -->
-  <a href="https://wa.me/918062180546" class="pointer-events-auto flex items-center gap-2 bg-[#25D366] text-white pl-1 pr-3 py-1 rounded-full shadow-[0_2px_8px_rgba(37,211,102,0.4)] hover:scale-105 active:scale-95 transition-all">
-    <!-- Icon Circle -->
-    <div class="w-7 h-7 bg-white rounded-full flex items-center justify-center shadow-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+  <!-- 1. WhatsApp Floating Button -->
+  <a href="https://wa.me/918062180546" class="pointer-events-auto flex items-center gap-2 bg-[#25D366] text-white pl-1.5 pr-4 py-1.5 rounded-full shadow-[0_4px_12px_rgba(37,211,102,0.4)] hover:scale-105 active:scale-95 transition-all">
+    <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-sm">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
     </div>
-    <!-- Text -->
     <div class="flex flex-col text-left">
-      <span class="text-[8px] font-bold uppercase tracking-wider leading-tight text-white/90">Contact on</span>
-      <span class="text-xs font-bold leading-tight">WhatsApp</span>
+      <span class="text-[9px] font-bold uppercase tracking-wider leading-tight text-white/90">Contact on</span>
+      <span class="text-sm font-bold leading-tight">WhatsApp</span>
     </div>
   </a>
 
-  <!-- Call Button -->
-  <a href="tel:08062180546" class="pointer-events-auto flex items-center gap-2 bg-kent-blue text-white pl-1 pr-3 py-1 rounded-full shadow-[0_2px_8px_rgba(0,86,164,0.4)] hover:scale-105 active:scale-95 transition-all">
-    <!-- Icon Circle -->
-    <div class="w-7 h-7 bg-white rounded-full flex items-center justify-center shadow-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0056A4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+  <!-- 2. Click to Call Floating Button -->
+  <a href="tel:08062180546" class="pointer-events-auto flex items-center gap-2 bg-kent-blue text-white pl-1.5 pr-4 py-1.5 rounded-full shadow-[0_4px_12px_rgba(0,86,164,0.4)] hover:scale-105 active:scale-95 transition-all">
+    <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-sm">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0056A4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
     </div>
-    <!-- Text -->
     <div class="flex flex-col text-left">
-      <span class="text-[8px] font-bold uppercase tracking-wider leading-tight text-white/90">Click to Call</span>
-      <span class="text-xs font-bold leading-tight tracking-wide">08062180546</span>
+      <span class="text-[9px] font-bold uppercase tracking-wider leading-tight text-white/90">Click to Call</span>
+      <span class="text-sm font-bold leading-tight">08062180546</span>
     </div>
   </a>
 
+</div>
+
+<!-- 3. FULL WIDTH CALL NOW BAR (Bottom) -->
+<div class="fixed bottom-0 left-0 w-full z-[100] md:hidden shadow-[0_-4px_10px_rgba(0,0,0,0.15)]">
+  <a href="tel:08062180546" class="w-full bg-kent-blue text-white flex items-center justify-center gap-2 py-4 font-bold text-[17px] hover:bg-kent-dark transition active:bg-blue-800">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+    Call Now : 08062180546
+  </a>
 </div>
