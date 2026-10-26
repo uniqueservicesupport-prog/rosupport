@@ -1,0 +1,101 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout>
+
+  <!-- Thank You Section -->
+  <section class="bg-[#F3F6F9] py-16 md:py-24 px-4 min-h-[70vh] flex items-center">
+    <div class="max-w-3xl mx-auto text-center">
+      
+      <!-- Success Icon -->
+      <div class="w-24 h-24 bg-green-100 text-green-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+
+      <!-- Main Heading -->
+      <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Booking <span class="text-kent-blue">Successful!</span>
+      </h1>
+      
+      <p class="text-lg md:text-xl text-gray-600 mb-6">
+        Thank you for choosing <strong>24x7 RO Support</strong>. Your service request has been received.
+      </p>
+
+      <!-- Booking ID Display Box -->
+      <div class="bg-white border-2 border-dashed border-kent-blue p-4 rounded-xl max-w-sm mx-auto mb-10 shadow-sm">
+        <p class="text-sm text-gray-500 mb-1">Your Booking ID</p>
+        
+        <!-- ID is empty initially, JS will fill it -->
+        <p id="bookingIdDisplay" class="text-3xl font-extrabold text-kent-blue tracking-wider">Loading...</p>
+        
+        <p class="text-xs text-gray-400 mt-2">Please save this ID for future reference.</p>
+      </div>
+
+      <!-- What Happens Next Box -->
+      <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl border border-gray-100 text-left max-w-xl mx-auto mb-10">
+        <h2 class="text-xl font-bold text-gray-900 mb-4 border-b pb-2">What happens next?</h2>
+        
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3">
+            <div class="w-6 h-6 bg-blue-100 text-kent-blue rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 mt-0.5">1</div>
+            <div>
+              <p class="font-bold text-gray-800">Instant Call</p>
+              <p class="text-sm text-gray-500">Our support team will call you within 5 minutes to confirm your address and issue.</p>
+            </div>
+          </li>
+          
+          <li class="flex items-start gap-3">
+            <div class="w-6 h-6 bg-blue-100 text-kent-blue rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 mt-0.5">2</div>
+            <div>
+              <p class="font-bold text-gray-800">Technician Dispatch</p>
+              <p class="text-sm text-gray-500">A background-verified RO expert will be dispatched to your location immediately.</p>
+            </div>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <div class="w-6 h-6 bg-blue-100 text-kent-blue rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 mt-0.5">3</div>
+            <div>
+              <p class="font-bold text-gray-800">Diagnosis & Repair</p>
+              <p class="text-sm text-gray-500">The technician will diagnose the issue, provide a transparent quote, and fix your RO.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Urgent Contact Options -->
+      <div class="bg-blue-50 border border-blue-100 p-6 rounded-xl max-w-xl mx-auto">
+        <p class="font-bold text-gray-800 mb-3">Need urgent help right now?</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-3">
+          <a href="tel:08062180546" class="bg-kent-blue text-white px-6 py-3 rounded-lg font-bold shadow-md hover:bg-kent-dark transition flex items-center justify-center gap-2">
+            📞 Call Us Directly
+          </a>
+          <a href="https://wa.me/918062180546" class="bg-[#25D366] text-white px-6 py-3 rounded-lg font-bold shadow-md hover:bg-green-600 transition flex items-center justify-center gap-2">
+            💬 WhatsApp Us
+          </a>
+        </div>
+      </div>
+
+      <!-- Back to Home -->
+      <div class="mt-8">
+        <a href="/" class="text-kent-blue font-semibold hover:underline">← Back to Homepage</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CLIENT-SIDE SCRIPT TO GET ID FROM URL -->
+  <script is:inline>
+    // Window load hone par URL se ID nikaalo
+    const urlParams = new URLSearchParams(window.location.search);
+    const bookingId = urlParams.get('bookingId') || 'ROS-PENDING';
+    
+    // HTML element dhoondo aur usme ID daal do
+    const displayElement = document.getElementById('bookingIdDisplay');
+    if (displayElement) {
+      displayElement.textContent = bookingId;
+    }
+  </script>
+
+</Layout>

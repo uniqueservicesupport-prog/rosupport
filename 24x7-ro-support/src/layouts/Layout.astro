@@ -1,0 +1,54 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import StickyBottomBar from '../components/StickyBottomBar.astro';
+---
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Bangalore's trusted multi-brand RO water purifier repair, maintenance, installation, and AMC service provider. 60-min doorstep service with 90-day warranty." />
+		<title>24x7 RO Support | Bangalore's Top Water Purifier Repair</title>
+		
+		<!-- Google Fonts: Inter -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+		<!-- Local Business Schema for SEO & Google Ads -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "LocalBusiness",
+			"name": "24x7 RO Support",
+			"image": "https://24x7rosupport.com/logo.jpg",
+			"@id": "https://24x7rosupport.com",
+			"url": "https://24x7rosupport.com",
+			"telephone": "+918062180546",
+			"priceRange": "₹₹",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Bangalore",
+				"addressRegion": "KA",
+				"addressCountry": "IN"
+			},
+			"aggregateRating": {
+				"@type": "AggregateRating",
+				"ratingValue": "4.7",
+				"reviewCount": "12560"
+			}
+		}
+		</script>
+	</head>
+	<body class="bg-white text-kent-text font-sans antialiased pb-24 md:pb-0">
+		
+		<Header />
+		
+		<main class="min-h-screen">
+			<slot /> 
+		</main>
+
+		<StickyBottomBar />
+	</body>
+</html>
