@@ -34,14 +34,15 @@ import Layout from '../layouts/Layout.astro';
     <div class="max-w-xl mx-auto">
       
       <div id="booking-form" class="bg-white p-6 md:p-8 rounded-2xl shadow-xl border border-gray-100 relative">
-        <div class="absolute -top-3 -right-3 bg-kent-blue text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">Book Now</div>
+        <div class="absolute -top-3 -right-3 bg-kent-blue text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg z-10">Book Now</div>
         
-        <h3 class="text-2xl font-bold text-gray-900 mb-1 text-center">Book Kent Repair</h3>
+        <h3 class="text-2xl font-bold text-gray-900 mb-1 text-center mt-2">Book Kent Repair</h3>
         <p class="text-sm text-gray-500 mb-6 text-center">Fill the form & our technician will call you in 5 mins.</p>
         
         <form id="bookingForm" class="space-y-4">
           
-          <input type="hidden" name="_captcha" value="false">
+          <!-- WEB3FORMS ACCESS KEY -->
+          <input type="hidden" name="access_key" value="1d5d47df-4a9a-4f20-ba78-7aa07022894e">
           <input type="hidden" name="_subject" value="New KENT RO Booking Request!">
           <input type="hidden" name="brand" value="Kent">
 
@@ -171,7 +172,7 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- 6. HOW IT WORKS (NEW SECTION replacing Pricing) -->
+  <!-- 6. HOW IT WORKS -->
   <section class="py-16 bg-white px-4 border-b border-gray-200">
     <div class="max-w-4xl mx-auto">
       <div class="text-center mb-12">
@@ -180,28 +181,24 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
-        <!-- Step 1 -->
         <div class="text-center relative z-10">
           <div class="w-16 h-16 mx-auto bg-blue-50 border-4 border-white text-kent-blue rounded-full flex items-center justify-center text-2xl font-bold shadow-md mb-4">1</div>
           <h3 class="font-bold text-gray-900 text-lg mb-2">Book Appointment</h3>
           <p class="text-sm text-gray-600">Fill the form or call us. We confirm your booking instantly.</p>
         </div>
         
-        <!-- Step 2 -->
         <div class="text-center relative z-10">
           <div class="w-16 h-16 mx-auto bg-blue-50 border-4 border-white text-kent-blue rounded-full flex items-center justify-center text-2xl font-bold shadow-md mb-4">2</div>
           <h3 class="font-bold text-gray-900 text-lg mb-2">Expert Visits You</h3>
           <p class="text-sm text-gray-600">Our verified Kent technician arrives at your doorstep within 60 minutes.</p>
         </div>
         
-        <!-- Step 3 -->
         <div class="text-center relative z-10">
           <div class="w-16 h-16 mx-auto bg-blue-50 border-4 border-white text-kent-blue rounded-full flex items-center justify-center text-2xl font-bold shadow-md mb-4">3</div>
           <h3 class="font-bold text-gray-900 text-lg mb-2">Repair & Warranty</h3>
           <p class="text-sm text-gray-600">We fix the issue with genuine parts and give you a 90-day warranty.</p>
         </div>
         
-        <!-- Connecting Line (Desktop only) -->
         <div class="hidden md:block absolute top-8 left-[16%] right-[16%] h-1 bg-gray-100 -z-0"></div>
       </div>
       
@@ -222,18 +219,18 @@ import Layout from '../layouts/Layout.astro';
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
           <div class="flex text-yellow-500 mb-3">⭐⭐⭐⭐⭐</div>
-          <p class="text-gray-700 text-sm mb-4 italic">"My Kent Grand Plus stopped working. I called them and the technician arrived in just 40 minutes. Fixed the SMPS issue quickly."</p>
-          <div class="font-bold text-gray-900 text-sm">- Vikram R. (Indiranagar)</div>
+          <p class="text-gray-700 text-sm mb-4 italic">"My Kent Grand stopped working. I called them and the technician arrived in just 40 minutes. Fixed the SMPS issue quickly."</p>
+          <div class="font-bold text-gray-900 text-sm">- Ramesh K. (Indiranagar)</div>
         </div>
         <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
           <div class="flex text-yellow-500 mb-3">⭐⭐⭐⭐⭐</div>
           <p class="text-gray-700 text-sm mb-4 italic">"They changed my Kent RO filters. The technician was very polite and showed me the TDS reading before and after. Highly recommend."</p>
-          <div class="font-bold text-gray-900 text-sm">- Sneha K. (HSR Layout)</div>
+          <div class="font-bold text-gray-900 text-sm">- Divya S. (HSR Layout)</div>
         </div>
         <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
           <div class="flex text-yellow-500 mb-3">⭐⭐⭐⭐⭐</div>
           <p class="text-gray-700 text-sm mb-4 italic">"Water was leaking from my Kent purifier. They fixed the pipe connection at a very reasonable price. Genuine service."</p>
-          <div class="font-bold text-gray-900 text-sm">- Manoj D. (Whitefield)</div>
+          <div class="font-bold text-gray-900 text-sm">- Kiran M. (Whitefield)</div>
         </div>
       </div>
     </div>
@@ -335,64 +332,26 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
     
-    <!-- STRONG DISCLAIMER BOX -->
     <div class="max-w-6xl mx-auto mt-8 bg-gray-800 p-4 rounded-lg border border-gray-700 shadow-inner">
       <p class="text-xs md:text-sm text-gray-300 text-center font-semibold">
         <strong class="text-white">Disclaimer:</strong> 24x7 RO Service Department is an independent, third-party multi-brand RO water purifier repair and service center in Bangalore. Brand names & logos belong to their respective owners and are referenced solely for compatibility identification. We are <strong class="text-white underline">NOT</strong> an authorized service partner of any brand.
       </p>
     </div>
 
-    <!-- Copyright Text -->
     <div class="max-w-6xl mx-auto mt-6 pt-6 border-t border-gray-800 text-center text-gray-500 text-sm">
       <p>© 2024 24x7 RO Service Department. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- FAQ Schema Markup for Google SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How much does Kent RO service cost in Bangalore?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The basic visit and diagnosis charge is ₹299. This amount is completely waived off if you get your Kent RO repaired by us. Spare parts are charged separately based on the issue."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you use genuine Kent RO spare parts?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, we only use 100% original Kent filters, membranes, and pumps. All replaced parts come with a 90-day warranty."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "My Kent RO is out of warranty. Can you still repair it?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely! We are an independent service center. We provide out-of-warranty repairs for all Kent models at very affordable rates."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <!-- FORMSUBMIT AJAX SCRIPT -->
+  <!-- WEB3FORMS AJAX SCRIPT -->
   <script is:inline>
     document.addEventListener('DOMContentLoaded', function() {
       const form = document.getElementById('bookingForm');
-      
       if(form) {
         form.addEventListener('submit', function(e) {
           e.preventDefault(); 
-          
           const randomNum = Math.floor(100000 + Math.random() * 900000);
-          const bookingId = 'KENT-' + randomNum;
+          const bookingId = 'KENT-' + randomNum; 
           
           const formData = new FormData(form);
           const data = Object.fromEntries(formData);
@@ -403,12 +362,9 @@ import Layout from '../layouts/Layout.astro';
           submitButton.innerText = "Booking...";
           submitButton.disabled = true;
 
-          fetch("https://formsubmit.co/ajax/Rocarebangalorero@gmail.com", {
+          fetch("https://api.web3forms.com/submit", {
             method: "POST",
-            headers: {
-              'Content-Type': 'application/json',
-              'Accept': 'application/json'
-            },
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
             body: JSON.stringify(data)
           })
           .then(async (response) => {
