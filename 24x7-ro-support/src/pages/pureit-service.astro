@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 ---
 <Layout>
 
-  <!-- 1. PHOTO & TITLE SECTION (Pureit Teal Gradient Overlay) -->
+  <!-- 1. PHOTO & TITLE SECTION -->
   <section class="bg-teal-50 py-8 px-4 border-b border-gray-200">
     <div class="max-w-4xl mx-auto text-center">
       
@@ -13,11 +13,9 @@ import Layout from '../layouts/Layout.astro';
           alt="Pureit RO Repair Service in Bangalore" 
           class="w-full h-full object-cover" 
         />
-        
-        <!-- Yahan Kent jaisa solid gradient lagaya hai, lekin Teal color mein -->
-        <div class="absolute inset-0 bg-gradient-to-t from-teal-900 via-teal-700/80 to-transparent flex flex-col justify-end p-6 text-left">
-          <h1 class="text-3xl md:text-5xl font-extrabold text-white relative z-10">Pureit RO Repair</h1>
-          <p class="text-white mt-2 relative z-10 font-medium text-sm md:text-base">Bangalore's Trusted Service Center</p>
+        <div class="absolute inset-0 bg-gradient-to-t from-teal-950/95 via-teal-900/80 to-transparent flex flex-col justify-end p-6 text-left">
+          <h1 class="text-2xl md:text-4xl font-extrabold text-white relative z-10 drop-shadow-md mb-1">Pureit Water Purifier Service</h1>
+          <p class="text-gray-100 relative z-10 font-medium text-sm md:text-base drop-shadow-md">Bangalore's Trusted Service Center</p>
         </div>
       </div>
 
@@ -31,7 +29,7 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- 2. FORM SECTION (Light Teal Background) -->
+  <!-- 2. FORM SECTION -->
   <section class="py-10 px-4 bg-teal-50 border-b border-gray-200">
     <div class="max-w-xl mx-auto">
       
@@ -43,7 +41,7 @@ import Layout from '../layouts/Layout.astro';
         
         <form id="bookingForm" class="space-y-4">
           
-          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="access_key" value="1d5d47df-4a9a-4f20-ba78-7aa07022894e">
           <input type="hidden" name="_subject" value="New PUREIT RO Booking Request!">
           <input type="hidden" name="brand" value="Pureit">
 
@@ -333,64 +331,26 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
     
-    <!-- STRONG DISCLAIMER BOX -->
     <div class="max-w-6xl mx-auto mt-8 bg-gray-800 p-4 rounded-lg border border-gray-700 shadow-inner">
       <p class="text-xs md:text-sm text-gray-300 text-center font-semibold">
         <strong class="text-white">Disclaimer:</strong> 24x7 RO Service Department is an independent, third-party multi-brand RO water purifier repair and service center in Bangalore. Brand names & logos belong to their respective owners and are referenced solely for compatibility identification. We are <strong class="text-white underline">NOT</strong> an authorized service partner of any brand.
       </p>
     </div>
 
-    <!-- Copyright Text -->
     <div class="max-w-6xl mx-auto mt-6 pt-6 border-t border-gray-800 text-center text-gray-500 text-sm">
       <p>© 2024 24x7 RO Service Department. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- FAQ Schema Markup for Google SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How much does Pureit RO service cost in Bangalore?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The basic visit and diagnosis charge is ₹299. This amount is completely waived off if you get your Pureit RO repaired by us. Spare parts are charged separately based on the issue."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you use genuine Pureit RO spare parts?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, we only use 100% original Pureit filters, membranes, and pumps. All replaced parts come with a 90-day warranty."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "My Pureit RO is out of warranty. Can you still repair it?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely! We are an independent service center. We provide out-of-warranty repairs for all Pureit models at very affordable rates."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <!-- FORMSUBMIT AJAX SCRIPT -->
+  <!-- WEB3FORMS AJAX SCRIPT -->
   <script is:inline>
     document.addEventListener('DOMContentLoaded', function() {
       const form = document.getElementById('bookingForm');
-      
       if(form) {
         form.addEventListener('submit', function(e) {
           e.preventDefault(); 
-          
           const randomNum = Math.floor(100000 + Math.random() * 900000);
-          const bookingId = 'PUREIT-' + randomNum;
+          const bookingId = 'PUREIT-' + randomNum; 
           
           const formData = new FormData(form);
           const data = Object.fromEntries(formData);
@@ -401,12 +361,9 @@ import Layout from '../layouts/Layout.astro';
           submitButton.innerText = "Booking...";
           submitButton.disabled = true;
 
-          fetch("https://formsubmit.co/ajax/Rocarebangalorero@gmail.com", {
+          fetch("https://api.web3forms.com/submit", {
             method: "POST",
-            headers: {
-              'Content-Type': 'application/json',
-              'Accept': 'application/json'
-            },
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
             body: JSON.stringify(data)
           })
           .then(async (response) => {
