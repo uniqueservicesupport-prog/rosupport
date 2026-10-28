@@ -41,6 +41,7 @@ import Layout from '../layouts/Layout.astro';
         
         <form id="bookingForm" class="space-y-4">
           
+          <!-- Web3Forms Access Key -->
           <input type="hidden" name="access_key" value="1d5d47df-4a9a-4f20-ba78-7aa07022894e">
           <input type="hidden" name="_subject" value="New PUREIT RO Booking Request!">
           <input type="hidden" name="brand" value="Pureit">
@@ -299,7 +300,7 @@ import Layout from '../layouts/Layout.astro';
       <div class="lg:col-span-1">
         <h3 class="text-2xl font-bold mb-4 text-white">24x7 RO Service Department</h3>
         <p class="text-gray-400 text-sm mb-4 leading-relaxed">Bangalore's trusted multi-brand RO water purifier repair, maintenance, installation, and AMC service provider.</p>
-        <p class="text-gray-400 text-sm mb-2">📞 08062180546</p>
+        <p class="text-gray-400 text-sm mb-2">📞 08069578358</p>
         <p class="text-gray-400 text-sm mb-2">✉️ support@24x7roservicedepartment.com</p>
         <p class="text-gray-400 text-sm">📍 Bangalore, Karnataka</p>
       </div>
@@ -331,16 +332,50 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
     
+    <!-- STRONG DISCLAIMER BOX -->
     <div class="max-w-6xl mx-auto mt-8 bg-gray-800 p-4 rounded-lg border border-gray-700 shadow-inner">
       <p class="text-xs md:text-sm text-gray-300 text-center font-semibold">
         <strong class="text-white">Disclaimer:</strong> 24x7 RO Service Department is an independent, third-party multi-brand RO water purifier repair and service center in Bangalore. Brand names & logos belong to their respective owners and are referenced solely for compatibility identification. We are <strong class="text-white underline">NOT</strong> an authorized service partner of any brand.
       </p>
     </div>
 
+    <!-- Copyright Text -->
     <div class="max-w-6xl mx-auto mt-6 pt-6 border-t border-gray-800 text-center text-gray-500 text-sm">
       <p>© 2024 24x7 RO Service Department. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- FLOATING WHATSAPP (Desktop Only) - PUREIT SPECIFIC MESSAGE -->
+  <a href="https://wa.me/919632234429?text=Hello%20Service%20center%20bangalore%2C%20I%20would%20like%20to%20book%20Pureit%20RO%20water%20purifier%20service%2Frepair%20in%20Bangalore." class="hidden md:flex fixed bottom-8 right-8 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition z-50 items-center justify-center group">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+    <span class="absolute right-full mr-3 bg-gray-900 text-white text-sm px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition whitespace-nowrap pointer-events-none">Chat with us</span>
+  </a>
+
+  <!-- FAQ Schema Markup for Google SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does Pureit RO service cost in Bangalore?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The basic visit and diagnosis charge is ₹299. This amount is completely waived off if you get your Pureit RO repaired by us. Spare parts are charged separately based on the issue."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you use genuine Pureit RO spare parts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we only use 100% original Pureit filters, membranes, and pumps. All replaced parts come with a 90-day warranty."
+        }
+      }
+    ]
+  }
+  </script>
 
   <!-- WEB3FORMS AJAX SCRIPT -->
   <script is:inline>
