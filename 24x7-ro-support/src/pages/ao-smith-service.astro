@@ -4,48 +4,46 @@ import Layout from '../layouts/Layout.astro';
 <Layout>
 
   <!-- 1. PHOTO & TITLE SECTION -->
-  <section class="bg-green-50 py-8 px-4 border-b border-gray-200">
+  <section class="bg-blue-50 py-8 px-4 border-b border-gray-200">
     <div class="max-w-4xl mx-auto text-center">
       
       <div class="w-full h-56 md:h-80 rounded-2xl shadow-lg overflow-hidden relative mb-6">
         <img 
-          src="/ao-smith-photo.jpg" 
-          alt="AO Smith RO Repair Service in Bangalore" 
+          src="/aquaguard-photo.jpg" 
+          alt="Aquaguard RO Repair Service in Bangalore" 
           class="w-full h-full object-cover" 
         />
-        
-        <!-- Photo ke upar naya text add kiya hai -->
-        <div class="absolute inset-0 bg-gradient-to-t from-green-950/95 via-green-800/70 to-transparent flex flex-col justify-end p-6 text-left">
-          <h1 class="text-2xl md:text-4xl font-extrabold text-white relative z-10 drop-shadow-lg mb-1">AO Smith Water Purifier Service</h1>
-          <p class="text-gray-100 relative z-10 font-medium text-sm md:text-base drop-shadow-md">Bangalore's Trusted Service Center</p>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-6 text-left">
+          <h1 class="text-3xl md:text-5xl font-extrabold text-white relative z-10 drop-shadow-lg">Aquaguard RO Repair</h1>
+          <p class="text-white mt-2 relative z-10 font-medium text-sm md:text-base drop-shadow-md">Bangalore's Trusted Service Center</p>
         </div>
       </div>
 
       <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-        Expert <span class="text-green-600">AO Smith RO Service</span> in Bangalore
+        Expert <span class="text-green-600">Aquaguard RO Service</span> in Bangalore
       </h2>
       <p class="text-gray-600 text-sm md:text-base">
-        Get your AO Smith water purifier repaired at your doorstep within 60 minutes.
+        Get your Aquaguard water purifier repaired at your doorstep within 60 minutes.
       </p>
 
     </div>
   </section>
 
-  <!-- 2. FORM SECTION (Light Green Background) -->
-  <section class="py-10 px-4 bg-green-50 border-b border-gray-200">
+  <!-- 2. FORM SECTION -->
+  <section class="py-10 px-4 bg-blue-50 border-b border-gray-200">
     <div class="max-w-xl mx-auto">
       
       <div id="booking-form" class="bg-white p-6 md:p-8 rounded-2xl shadow-xl border border-gray-100 relative">
         <div class="absolute -top-3 -right-3 bg-green-600 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg z-10">Book Now</div>
         
-        <h3 class="text-2xl font-bold text-gray-900 mb-1 text-center mt-2">Book AO Smith Repair</h3>
+        <h3 class="text-2xl font-bold text-gray-900 mb-1 text-center mt-2">Book Aquaguard Repair</h3>
         <p class="text-sm text-gray-500 mb-6 text-center">Fill the form & our technician will call you in 5 mins.</p>
         
         <form id="bookingForm" class="space-y-4">
           
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_subject" value="New AO SMITH RO Booking Request!">
-          <input type="hidden" name="brand" value="AO Smith">
+          <input type="hidden" name="access_key" value="1d5d47df-4a9a-4f20-ba78-7aa07022894e">
+          <input type="hidden" name="_subject" value="New AQUAGUARD RO Booking Request!">
+          <input type="hidden" name="brand" value="Aquaguard">
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -67,10 +65,10 @@ import Layout from '../layouts/Layout.astro';
               <label class="block text-sm font-semibold text-gray-700 mb-1">Select Service</label>
               <select name="issue" required class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition bg-white">
                 <option value="" disabled selected>Choose Service...</option>
-                <option value="AO Smith water purifier service">AO Smith Water Purifier Service</option>
-                <option value="AO Smith water purifier repair">AO Smith Water Purifier Repair</option>
-                <option value="AO Smith water purifier AMC">AO Smith Water Purifier AMC</option>
-                <option value="AO Smith water purifier filter Replacement">AO Smith Water Purifier Filter Replacement</option>
+                <option value="Aquaguard water purifier service">Aquaguard Water Purifier Service</option>
+                <option value="Aquaguard water purifier repair">Aquaguard Water Purifier Repair</option>
+                <option value="Aquaguard water purifier AMC">Aquaguard Water Purifier AMC</option>
+                <option value="Aquaguard water purifier filter Replacement">Aquaguard Water Purifier Filter Replacement</option>
               </select>
             </div>
           </div>
@@ -80,9 +78,8 @@ import Layout from '../layouts/Layout.astro';
             <textarea name="address" placeholder="Flat No, Building, Area..." rows="2" required class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition"></textarea>
           </div>
 
-          <!-- BUTTON WITH INLINE STYLE -->
-          <button type="submit" class="w-full text-white font-bold text-lg py-3 rounded-lg shadow-md transition" style="background-color: #15803d;">
-            Book AO Smith Service Now
+          <button type="submit" class="w-full bg-green-600 text-white font-bold text-lg py-3 rounded-lg hover:bg-green-700 shadow-md transition">
+            Book Aquaguard Service Now
           </button>
           
           <p class="text-xs text-center text-gray-400 mt-2">No advance payment required.</p>
@@ -95,12 +92,12 @@ import Layout from '../layouts/Layout.astro';
   <!-- 3. WORKING PHOTO SECTION -->
   <section class="py-10 px-4 bg-white border-b border-gray-100">
     <div class="max-w-3xl mx-auto text-center">
-      <h3 class="text-2xl font-bold text-gray-900 mb-4">Our <span class="text-green-600">AO Smith Expert</span> at Work</h3>
+      <h3 class="text-2xl font-bold text-gray-900 mb-4">Our <span class="text-green-600">Aquaguard Expert</span> at Work</h3>
       
       <a href="#booking-form" class="block relative rounded-2xl overflow-hidden shadow-lg group">
         <img 
-          src="/ao-smith-technician.jpg" 
-          alt="AO Smith RO Technician at work" 
+          src="/aquaguard-technician.jpg" 
+          alt="Aquaguard RO Technician at work" 
           class="w-full h-48 md:h-72 object-cover transition-transform duration-500 group-hover:scale-105" 
         />
         <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
@@ -116,25 +113,25 @@ import Layout from '../layouts/Layout.astro';
     <div class="max-w-4xl mx-auto">
       
       <h2 class="text-3xl font-extrabold text-gray-900 mb-6 border-b pb-3 border-gray-200">
-        Our <span class="text-green-600">AO Smith Services</span> in Bangalore
+        Our <span class="text-green-600">Aquaguard Services</span> in Bangalore
       </h2>
 
       <div class="prose max-w-none text-gray-700 text-justify space-y-4">
         <p class="text-lg font-medium text-gray-900">
-          Is your AO Smith RO leaking water, making unusual noise, or giving a bad taste? Don't worry! 
+          Is your Aquaguard RO leaking water, making unusual noise, or giving a bad taste? Don't worry! 
         </p>
         <p>
-          We are Bangalore's leading independent <strong>AO Smith RO repair service center</strong>. Whether you have an AO Smith Z8, X8, or any other model, our expert technicians can fix it on the spot. We understand that Bangalore's hard water damages RO membranes quickly, which is why we use 100% genuine spare parts to ensure your water is safe and sweet.
+          We are Bangalore's leading independent <strong>Aquaguard RO repair service center</strong>. Whether you have an Aquaguard Enhance, Aquaguard Marvel, or any other model, our expert technicians can fix it on the spot. We understand that Bangalore's hard water damages RO membranes quickly, which is why we use 100% genuine spare parts to ensure your water is safe and sweet.
         </p>
 
         <ul class="list-none space-y-3 my-6">
           <li class="flex items-start gap-3">
             <span class="text-green-500 text-xl">✅</span>
-            <span><strong>Common AO Smith Issues Fixed:</strong> Pump failure, SMPS burnout, continuous waste water, filter clogging, and motor vibration.</span>
+            <span><strong>Common Aquaguard Issues Fixed:</strong> Pump failure, SMPS burnout, continuous waste water, filter clogging, and motor vibration.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="text-green-500 text-xl">✅</span>
-            <span><strong>Genuine AO Smith Spares:</strong> We use original filters, membranes, and pumps with a 90-day warranty.</span>
+            <span><strong>Genuine Aquaguard Spares:</strong> We use original filters, membranes, and pumps with a 90-day warranty.</span>
           </li>
           <li class="flex items-start gap-3">
             <span class="text-green-500 text-xl">✅</span>
@@ -147,23 +144,23 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- 5. WHY CHOOSE US -->
-  <section class="py-16 bg-green-50 px-4 border-b border-gray-200">
+  <section class="py-16 bg-blue-50 px-4 border-b border-gray-200">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-10">
-        <h2 class="text-3xl font-bold text-gray-900">Why Choose Our AO Smith Experts?</h2>
-        <p class="text-gray-600 mt-2">We are not just any service center; we specialize in AO Smith RO repairs.</p>
+        <h2 class="text-3xl font-bold text-gray-900">Why Choose Our Aquaguard Experts?</h2>
+        <p class="text-gray-600 mt-2">We are not just any service center; we specialize in Aquaguard RO repairs.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
           <div class="text-4xl mb-3">🔧</div>
-          <h3 class="font-bold text-gray-900 mb-2">AO Smith Specialists</h3>
-          <p class="text-sm text-gray-600">Our technicians are specifically trained to handle all AO Smith models, including Z8 and X8.</p>
+          <h3 class="font-bold text-gray-900 mb-2">Aquaguard Specialists</h3>
+          <p class="text-sm text-gray-600">Our technicians are specifically trained to handle all Aquaguard models, including Enhance and Marvel.</p>
         </div>
         <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
           <div class="text-4xl mb-3">🛡️</div>
           <h3 class="font-bold text-gray-900 mb-2">Genuine Parts</h3>
-          <p class="text-sm text-gray-600">We never use local duplicates. Only 100% original AO Smith spare parts with a 90-day warranty.</p>
+          <p class="text-sm text-gray-600">We never use local duplicates. Only 100% original Aquaguard spare parts with a 90-day warranty.</p>
         </div>
         <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
           <div class="text-4xl mb-3">⏱️</div>
@@ -178,7 +175,7 @@ import Layout from '../layouts/Layout.astro';
   <section class="py-16 bg-white px-4 border-b border-gray-200">
     <div class="max-w-4xl mx-auto">
       <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold text-gray-900">How Our AO Smith Service Works</h2>
+        <h2 class="text-3xl font-bold text-gray-900">How Our Aquaguard Service Works</h2>
         <p class="text-gray-600 mt-2">Fast, transparent, and hassle-free doorstep repair.</p>
       </div>
 
@@ -192,7 +189,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="text-center relative z-10">
           <div class="w-16 h-16 mx-auto bg-green-50 border-4 border-white text-green-600 rounded-full flex items-center justify-center text-2xl font-bold shadow-md mb-4">2</div>
           <h3 class="font-bold text-gray-900 text-lg mb-2">Expert Visits You</h3>
-          <p class="text-sm text-gray-600">Our verified AO Smith technician arrives at your doorstep within 60 minutes.</p>
+          <p class="text-sm text-gray-600">Our verified Aquaguard technician arrives at your doorstep within 60 minutes.</p>
         </div>
         
         <div class="text-center relative z-10">
@@ -205,34 +202,34 @@ import Layout from '../layouts/Layout.astro';
       </div>
       
       <div class="text-center mt-10">
-         <a href="#booking-form" class="inline-block bg-green-600 text-white font-bold px-8 py-3 rounded-lg shadow-md hover:bg-green-700 transition">Book Your AO Smith Service Now</a>
+         <a href="#booking-form" class="inline-block bg-green-600 text-white font-bold px-8 py-3 rounded-lg shadow-md hover:bg-green-700 transition">Book Your Aquaguard Service Now</a>
       </div>
     </div>
   </section>
 
   <!-- 7. TESTIMONIALS -->
-  <section class="py-16 bg-green-50 px-4 border-b border-gray-200">
+  <section class="py-16 bg-blue-50 px-4 border-b border-gray-200">
     <div class="max-w-6xl mx-auto">
       <div class="text-center mb-10">
-        <h2 class="text-3xl font-bold text-gray-900 mb-2">What AO Smith Users Say About Us</h2>
-        <p class="text-gray-600">Real reviews from real AO Smith RO owners in Bangalore.</p>
+        <h2 class="text-3xl font-bold text-gray-900 mb-2">What Aquaguard Users Say About Us</h2>
+        <p class="text-gray-600">Real reviews from real Aquaguard RO owners in Bangalore.</p>
       </div>
       
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
           <div class="flex text-yellow-500 mb-3">⭐⭐⭐⭐⭐</div>
-          <p class="text-gray-700 text-sm mb-4 italic">"My AO Smith Z8 stopped working. I called them and the technician arrived in just 40 minutes. Fixed the SMPS issue quickly."</p>
-          <div class="font-bold text-gray-900 text-sm">- Ravi K. (Indiranagar)</div>
+          <p class="text-gray-700 text-sm mb-4 italic">"My Aquaguard Enhance stopped working. I called them and the technician arrived in just 40 minutes. Fixed the SMPS issue quickly."</p>
+          <div class="font-bold text-gray-900 text-sm">- Ramesh P. (Indiranagar)</div>
         </div>
         <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
           <div class="flex text-yellow-500 mb-3">⭐⭐⭐⭐⭐</div>
-          <p class="text-gray-700 text-sm mb-4 italic">"They changed my AO Smith RO filters. The technician was very polite and showed me the TDS reading before and after. Highly recommend."</p>
-          <div class="font-bold text-gray-900 text-sm">- Meena S. (HSR Layout)</div>
+          <p class="text-gray-700 text-sm mb-4 italic">"They changed my Aquaguard RO filters. The technician was very polite and showed me the TDS reading before and after. Highly recommend."</p>
+          <div class="font-bold text-gray-900 text-sm">- Divya S. (HSR Layout)</div>
         </div>
         <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
           <div class="flex text-yellow-500 mb-3">⭐⭐⭐⭐⭐</div>
-          <p class="text-gray-700 text-sm mb-4 italic">"Water was leaking from my AO Smith purifier. They fixed the pipe connection at a very reasonable price. Genuine service."</p>
-          <div class="font-bold text-gray-900 text-sm">- Arjun P. (Whitefield)</div>
+          <p class="text-gray-700 text-sm mb-4 italic">"Water was leaking from my Aquaguard purifier. They fixed the pipe connection at a very reasonable price. Genuine service."</p>
+          <div class="font-bold text-gray-900 text-sm">- Kiran M. (Whitefield)</div>
         </div>
       </div>
     </div>
@@ -241,36 +238,36 @@ import Layout from '../layouts/Layout.astro';
   <!-- 8. FAQs -->
   <section class="py-16 bg-white px-4 border-b border-gray-200">
     <div class="max-w-3xl mx-auto">
-      <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">AO Smith RO Service FAQs</h2>
+      <h2 class="text-3xl font-bold text-gray-900 text-center mb-8">Aquaguard RO Service FAQs</h2>
       
       <div class="space-y-4">
         <details class="bg-gray-50 border border-gray-200 rounded-lg p-4 cursor-pointer group shadow-sm" open>
           <summary class="font-bold text-gray-900 flex justify-between items-center list-none">
-            How much does AO Smith RO service cost in Bangalore?
+            How much does Aquaguard RO service cost in Bangalore?
             <span class="text-green-600 group-open:rotate-180 transition-transform">▼</span>
           </summary>
-          <p class="mt-3 text-gray-600 text-sm">The basic visit and diagnosis charge is ₹299. This amount is completely waived off if you get your AO Smith RO repaired by us. Spare parts are charged separately based on the issue.</p>
+          <p class="mt-3 text-gray-600 text-sm">The basic visit and diagnosis charge is ₹299. This amount is completely waived off if you get your Aquaguard RO repaired by us. Spare parts are charged separately based on the issue.</p>
         </details>
 
         <details class="bg-gray-50 border border-gray-200 rounded-lg p-4 cursor-pointer group shadow-sm">
           <summary class="font-bold text-gray-900 flex justify-between items-center list-none">
-            Do you use genuine AO Smith RO spare parts?
+            Do you use genuine Aquaguard RO spare parts?
             <span class="text-green-600 group-open:rotate-180 transition-transform">▼</span>
           </summary>
-          <p class="mt-3 text-gray-600 text-sm">Yes, we only use 100% original AO Smith filters, membranes, and pumps. All replaced parts come with a 90-day warranty.</p>
+          <p class="mt-3 text-gray-600 text-sm">Yes, we only use 100% original Aquaguard filters, membranes, and pumps. All replaced parts come with a 90-day warranty.</p>
         </details>
         
         <details class="bg-gray-50 border border-gray-200 rounded-lg p-4 cursor-pointer group shadow-sm">
           <summary class="font-bold text-gray-900 flex justify-between items-center list-none">
-            My AO Smith RO is out of warranty. Can you still repair it?
+            My Aquaguard RO is out of warranty. Can you still repair it?
             <span class="text-green-600 group-open:rotate-180 transition-transform">▼</span>
           </summary>
-          <p class="mt-3 text-gray-600 text-sm">Absolutely! We are an independent service center. We provide out-of-warranty repairs for all AO Smith models at very affordable rates.</p>
+          <p class="mt-3 text-gray-600 text-sm">Absolutely! We are an independent service center. We provide out-of-warranty repairs for all Aquaguard models at very affordable rates.</p>
         </details>
 
         <details class="bg-gray-50 border border-gray-200 rounded-lg p-4 cursor-pointer group shadow-sm">
           <summary class="font-bold text-gray-900 flex justify-between items-center list-none">
-            How long does it take to repair an AO Smith RO?
+            How long does it take to repair an Aquaguard RO?
             <span class="text-green-600 group-open:rotate-180 transition-transform">▼</span>
           </summary>
           <p class="mt-3 text-gray-600 text-sm">Most common issues (like leaks, pump failure, or filter changes) are fixed on the spot within 30-45 minutes.</p>
@@ -280,9 +277,9 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- 9. SERVICE AREAS -->
-  <section class="py-12 bg-green-50 px-4 text-center border-b border-gray-200">
+  <section class="py-12 bg-blue-50 px-4 text-center border-b border-gray-200">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">AO Smith RO Repair in Your Area</h2>
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Aquaguard RO Repair in Your Area</h2>
       <div class="flex flex-wrap justify-center gap-2">
         <span class="bg-white text-gray-700 px-3 py-1.5 rounded-full text-sm font-medium border border-gray-200">Whitefield</span>
         <span class="bg-white text-gray-700 px-3 py-1.5 rounded-full text-sm font-medium border border-gray-200">Koramangala</span>
@@ -334,64 +331,26 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
     
-    <!-- STRONG DISCLAIMER BOX -->
     <div class="max-w-6xl mx-auto mt-8 bg-gray-800 p-4 rounded-lg border border-gray-700 shadow-inner">
       <p class="text-xs md:text-sm text-gray-300 text-center font-semibold">
         <strong class="text-white">Disclaimer:</strong> 24x7 RO Service Department is an independent, third-party multi-brand RO water purifier repair and service center in Bangalore. Brand names & logos belong to their respective owners and are referenced solely for compatibility identification. We are <strong class="text-white underline">NOT</strong> an authorized service partner of any brand.
       </p>
     </div>
 
-    <!-- Copyright Text -->
     <div class="max-w-6xl mx-auto mt-6 pt-6 border-t border-gray-800 text-center text-gray-500 text-sm">
       <p>© 2024 24x7 RO Service Department. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- FAQ Schema Markup for Google SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How much does AO Smith RO service cost in Bangalore?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The basic visit and diagnosis charge is ₹299. This amount is completely waived off if you get your AO Smith RO repaired by us. Spare parts are charged separately based on the issue."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you use genuine AO Smith RO spare parts?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, we only use 100% original AO Smith filters, membranes, and pumps. All replaced parts come with a 90-day warranty."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "My AO Smith RO is out of warranty. Can you still repair it?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely! We are an independent service center. We provide out-of-warranty repairs for all AO Smith models at very affordable rates."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <!-- FORMSUBMIT AJAX SCRIPT -->
+  <!-- WEB3FORMS AJAX SCRIPT -->
   <script is:inline>
     document.addEventListener('DOMContentLoaded', function() {
       const form = document.getElementById('bookingForm');
-      
       if(form) {
         form.addEventListener('submit', function(e) {
           e.preventDefault(); 
-          
           const randomNum = Math.floor(100000 + Math.random() * 900000);
-          const bookingId = 'AOSMITH-' + randomNum;
+          const bookingId = 'AQUAGUARD-' + randomNum; 
           
           const formData = new FormData(form);
           const data = Object.fromEntries(formData);
@@ -402,12 +361,9 @@ import Layout from '../layouts/Layout.astro';
           submitButton.innerText = "Booking...";
           submitButton.disabled = true;
 
-          fetch("https://formsubmit.co/ajax/Rocarebangalorero@gmail.com", {
+          fetch("https://api.web3forms.com/submit", {
             method: "POST",
-            headers: {
-              'Content-Type': 'application/json',
-              'Accept': 'application/json'
-            },
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
             body: JSON.stringify(data)
           })
           .then(async (response) => {
