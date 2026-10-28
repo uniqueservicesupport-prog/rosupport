@@ -7,6 +7,7 @@ import Layout from '../layouts/Layout.astro';
   <section class="bg-blue-50 py-6 md:py-10 px-4 border-b border-gray-200">
     <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start">
       
+      <!-- Left Side: Text & Trust Badges -->
       <div class="text-center lg:text-left pt-2 lg:pt-0">
         <span class="bg-white text-kent-blue px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase mb-4 inline-block border border-blue-200 shadow-sm">
           ⚡ 60-Min Doorstep Arrival in Bangalore
@@ -17,7 +18,7 @@ import Layout from '../layouts/Layout.astro';
         </h1>
         
         <p class="text-gray-700 mb-6 text-base md:text-lg text-justify">
-          Is your RO leaking, making noise, or giving bad taste? Get Bangalore's most trusted water purifier service today. We repair all major brands at your doorstep in 60 minutes with 100% genuine spare parts and a 90-day warranty. <strong class="text-gray-900 font-bold">Doorstep visit and diagnosis is just <span class="text-orange-500 font-extrabold text-xl">₹299</span> <span class="text-sm font-bold text-green-600">(waived off if repaired)</span>.</strong>
+          Is your RO leaking, making noise, or giving bad taste? Get Bangalore's most trusted water purifier service today. We repair all major brands at your doorstep in 60 minutes with 100% genuine spare parts and a 90-day warranty. <strong class="text-gray-900 font-bold">Doorstep visit and diagnosis is just <span class="text-kent-red font-extrabold text-xl">₹299</span> <span class="text-sm font-bold text-green-600">(waived off if repaired)</span>.</strong>
         </p>
         
         <ul class="text-sm md:text-base text-gray-800 font-medium space-y-3 mb-2 lg:mb-8 text-left inline-block w-full max-w-md mx-auto lg:mx-0">
@@ -45,16 +46,21 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </div>
 
-      <!-- FORM -->
+      <!-- Right Side: Lead Form -->
       <div id="booking-form" class="bg-white p-6 md:p-8 rounded-2xl shadow-xl border border-gray-100 relative mt-2 lg:mt-0">
-        <div class="absolute -top-3 -right-3 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">Book Now</div>
+        <div class="absolute -top-3 -right-3 bg-kent-blue text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg z-10">Book Now</div>
         
-        <h3 class="text-2xl font-bold text-gray-900 mb-1">Book Your Appointment</h3>
-        <p class="text-sm text-gray-500 mb-6">Fill the form & our technician will call you in 5 mins.</p>
+        <h3 class="text-2xl font-bold text-gray-900 mb-1 text-center mt-2">Book Your Appointment</h3>
+        <p class="text-sm text-gray-500 mb-6 text-center">Fill the form & our technician will call you in 5 mins.</p>
         
+        <!-- Form Tag -->
         <form id="bookingForm" class="space-y-4">
-          <input type="hidden" name="_captcha" value="false">
+          
+          <!-- Web3Forms Access Key yahan add ki hai -->
+          <input type="hidden" name="access_key" value="1d5d47df-4a9a-4f20-ba78-7aa07022894e">
+          
           <input type="hidden" name="_subject" value="New RO Service Booking Request!">
+          <input type="hidden" name="brand" value="Home Page Lead">
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -73,18 +79,16 @@ import Layout from '../layouts/Layout.astro';
               <input type="number" name="pincode" placeholder="560001" required class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-kent-blue focus:border-transparent transition">
             </div>
             <div>
-              <label class="block text-sm font-semibold text-gray-700 mb-1">Select Issue/Brand</label>
-              <select name="brand" required class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-kent-blue focus:border-transparent transition bg-white">
-                <option value="" disabled selected>Select Brand/Service...</option>
-                <option value="Kent">Kent</option>
-                <option value="Aquaguard">Aquaguard</option>
-                <option value="Pureit">Pureit</option>
-                <option value="AO Smith">AO Smith</option>
-                <option value="LG">LG</option>
-                <option value="Havells">Havells</option>
-                <option value="Other">Other Brand</option>
-                <option value="Installation">New Installation</option>
-                <option value="Service">General Service</option>
+              <label class="block text-sm font-semibold text-gray-700 mb-1">Select Service</label>
+              <select name="service" required class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-kent-blue focus:border-transparent transition bg-white">
+                <option value="" disabled selected>Choose Service...</option>
+                <option value="Kent Service">Kent Service</option>
+                <option value="Aquaguard Service">Aquaguard Service</option>
+                <option value="Pureit Service">Pureit Service</option>
+                <option value="AO Smith Service">AO Smith Service</option>
+                <option value="LG Service">LG Service</option>
+                <option value="Havells Service">Havells Service</option>
+                <option value="Other Brand">Other Brand</option>
               </select>
             </div>
           </div>
@@ -152,7 +156,7 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- 4. PRICING / SERVICE CHARGES -->
+  <!-- 4. PRICING / AMC -->
   <section id="pricing" class="py-16 px-4 max-w-4xl mx-auto bg-white">
     <div class="text-center mb-10">
       <h2 class="text-3xl font-bold text-gray-900 mb-2">Transparent Service Packages</h2>
@@ -195,30 +199,17 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- 5. BRANDS SECTION (Links Updated) -->
+  <!-- 5. BRANDS SECTION -->
   <section class="py-12 bg-blue-50 border-y border-gray-200 px-4">
     <div class="max-w-6xl mx-auto text-center">
       <h2 class="text-2xl font-bold text-gray-900 mb-8">Expert Service for All Major Brands</h2>
       <div class="flex flex-wrap justify-center gap-4">
-        
-        <!-- KENT LINK -->
         <a href="/kent-service" class="bg-white text-kent-blue border border-blue-200 px-6 py-3 rounded-lg font-semibold hover:bg-kent-blue hover:text-white transition shadow-sm">Kent RO</a>
-        
-        <!-- AQUAGUARD LINK -->
         <a href="/aquaguard-service" class="bg-white text-kent-blue border border-blue-200 px-6 py-3 rounded-lg font-semibold hover:bg-kent-blue hover:text-white transition shadow-sm">Aquaguard</a>
-        
-        <!-- PUREIT LINK -->
         <a href="/pureit-service" class="bg-white text-kent-blue border border-blue-200 px-6 py-3 rounded-lg font-semibold hover:bg-kent-blue hover:text-white transition shadow-sm">Pureit</a>
-        
-        <!-- AO SMITH LINK -->
         <a href="/ao-smith-service" class="bg-white text-kent-blue border border-blue-200 px-6 py-3 rounded-lg font-semibold hover:bg-kent-blue hover:text-white transition shadow-sm">AO Smith</a>
-        
-        <!-- LG LINK -->
         <a href="/lg-service" class="bg-white text-kent-blue border border-blue-200 px-6 py-3 rounded-lg font-semibold hover:bg-kent-blue hover:text-white transition shadow-sm">LG</a>
-        
-        <!-- HAVELLS LINK -->
         <a href="/havells-service" class="bg-white text-kent-blue border border-blue-200 px-6 py-3 rounded-lg font-semibold hover:bg-kent-blue hover:text-white transition shadow-sm">Havells</a>
-        
       </div>
     </div>
   </section>
@@ -227,7 +218,7 @@ import Layout from '../layouts/Layout.astro';
   <div class="max-w-4xl mx-auto px-4 py-6 bg-white">
     <div class="bg-gray-50 border border-gray-200 p-4 rounded-lg text-center shadow-sm">
       <p class="text-xs text-gray-700 leading-relaxed">
-        <strong>Disclaimer:</strong> 24x7ro service department is an independent, third-party multi-brand RO water purifier repair and service center in Bangalore. Brand names & logos (Kent, Aquaguard, AO Smith, Pureit, LG, Havells, V-Guard, etc.) belong to their respective owners and are referenced solely for compatibility identification. We are not an authorized service partner of any brand.
+        <strong>Disclaimer:</strong> 24x7 RO Service Department is an independent, third-party multi-brand RO water purifier repair and service center in Bangalore. Brand names & logos (Kent, Aquaguard, AO Smith, Pureit, LG, Havells, V-Guard, etc.) belong to their respective owners and are referenced solely for compatibility identification. We are not an authorized service partner of any brand.
       </p>
     </div>
   </div>
@@ -268,7 +259,7 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- 8. LOCAL BANGALORE TDS ISSUE -->
+  <!-- 8. TDS ISSUE -->
   <section class="py-16 bg-gray-50 px-4 border-y border-gray-200">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-3xl font-bold text-gray-900 mb-4">Why Bangalore Water Ruins Your RO</h2>
@@ -369,37 +360,52 @@ import Layout from '../layouts/Layout.astro';
           </summary>
           <p class="mt-3 text-gray-600 text-sm">Due to high TDS in Bangalore water, we recommend replacing the sediment and carbon filters every 6 to 9 months to ensure the best water quality and motor life.</p>
         </details>
+
+        <details class="bg-blue-50 border border-blue-100 rounded-lg p-4 cursor-pointer group shadow-sm">
+          <summary class="font-bold text-gray-900 flex justify-between items-center list-none">
+            Which brands do you provide service for?
+            <span class="text-kent-blue group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-3 text-gray-600 text-sm">We are a multi-brand service center. We repair Kent, Aquaguard, Pureit, AO Smith, LG, Livpure, Zero B, Havells, V-Guard, and almost all other water purifier brands.</p>
+        </details>
+
+        <details class="bg-blue-50 border border-blue-100 rounded-lg p-4 cursor-pointer group shadow-sm">
+          <summary class="font-bold text-gray-900 flex justify-between items-center list-none">
+            Do I need to pay any advance amount for booking?
+            <span class="text-kent-blue group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <p class="mt-3 text-gray-600 text-sm">No, we do not take any advance payment. You only pay after the technician visits your home, diagnoses the issue, and you approve the final quote.</p>
+        </details>
       </div>
     </div>
   </section>
 
   <!-- 12. FOOTER -->
-  <footer class="bg-gray-900 text-white pt-12 px-4 pb-28 md:pb-6 border-t-4 border-kent-blue">
+  <footer class="bg-gray-900 text-white pt-12 px-4 pb-32 md:pb-8 border-t-4 border-kent-blue">
     <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       <div class="lg:col-span-1">
-        <h3 class="text-2xl font-bold mb-4 text-white">24x7ro service department</h3>
+        <h3 class="text-2xl font-bold mb-4 text-white">24x7 RO Service Department</h3>
         <p class="text-gray-400 text-sm mb-4 leading-relaxed">Bangalore's trusted multi-brand RO water purifier repair, maintenance, installation, and AMC service provider.</p>
         <p class="text-gray-400 text-sm mb-2">📞 08062180546</p>
-        <p class="text-gray-400 text-sm mb-2">✉️ support@24x7rosupport.com</p>
+        <p class="text-gray-400 text-sm mb-2">✉️ support@24x7roservicedepartment.com</p>
         <p class="text-gray-400 text-sm">📍 Bangalore, Karnataka</p>
       </div>
       <div>
         <h4 class="text-lg font-bold mb-4 text-white">Our Services</h4>
         <ul class="text-gray-400 text-sm space-y-2">
-          <li><a href="#services" class="hover:text-white transition">RO Repair & Service</a></li>
-          <li><a href="#services" class="hover:text-white transition">Filter Replacement</a></li>
-          <li><a href="#services" class="hover:text-white transition">Installation & Moving</a></li>
-          <li><a href="#pricing" class="hover:text-white transition">AMC Plans</a></li>
-          <li><a href="#services" class="hover:text-white transition">Free Water Test</a></li>
+          <li><a href="/#services" class="hover:text-white transition">RO Repair & Service</a></li>
+          <li><a href="/#services" class="hover:text-white transition">Filter Replacement</a></li>
+          <li><a href="/#services" class="hover:text-white transition">Installation & Moving</a></li>
+          <li><a href="/#pricing" class="hover:text-white transition">AMC Plans</a></li>
         </ul>
       </div>
       <div>
         <h4 class="text-lg font-bold mb-4 text-white">Quick Links</h4>
         <ul class="text-gray-400 text-sm space-y-2">
           <li><a href="/" class="hover:text-white transition">Home</a></li>
-          <li><a href="#booking-form" class="hover:text-white transition">Book Appointment</a></li>
-          <li><a href="#areas" class="hover:text-white transition">Service Areas</a></li>
-          <li><a href="#faq" class="hover:text-white transition">FAQs</a></li>
+          <li><a href="/#booking-form" class="hover:text-white transition">Book Appointment</a></li>
+          <li><a href="/#areas" class="hover:text-white transition">Service Areas</a></li>
+          <li><a href="/#faq" class="hover:text-white transition">FAQs</a></li>
         </ul>
       </div>
       <div>
@@ -414,9 +420,14 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
     
-    <div class="max-w-6xl mx-auto mt-10 pt-6 border-t border-gray-800 text-center text-gray-500 text-sm">
-      <p>© 2024 24x7ro service department. All rights reserved.</p>
-      <p class="mt-1 text-xs text-gray-600">Independent third-party service provider. Not affiliated with any brand.</p>
+    <div class="max-w-6xl mx-auto mt-8 bg-gray-800 p-4 rounded-lg border border-gray-700 shadow-inner">
+      <p class="text-xs md:text-sm text-gray-300 text-center font-semibold">
+        <strong class="text-white">Disclaimer:</strong> 24x7 RO Service Department is an independent, third-party multi-brand RO water purifier repair and service center in Bangalore. Brand names & logos belong to their respective owners and are referenced solely for compatibility identification. We are <strong class="text-white underline">NOT</strong> an authorized service partner of any brand.
+      </p>
+    </div>
+
+    <div class="max-w-6xl mx-auto mt-6 pt-6 border-t border-gray-800 text-center text-gray-500 text-sm">
+      <p>© 2024 24x7 RO Service Department. All rights reserved.</p>
     </div>
   </footer>
 
@@ -426,7 +437,7 @@ import Layout from '../layouts/Layout.astro';
     <span class="absolute right-full mr-3 bg-gray-900 text-white text-sm px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition whitespace-nowrap pointer-events-none">Chat with us</span>
   </a>
 
-  <!-- FORMSUBMIT AJAX SCRIPT -->
+  <!-- WEB3FORMS AJAX SCRIPT -->
   <script is:inline>
     document.addEventListener('DOMContentLoaded', function() {
       const form = document.getElementById('bookingForm');
@@ -435,11 +446,15 @@ import Layout from '../layouts/Layout.astro';
         form.addEventListener('submit', function(e) {
           e.preventDefault(); 
           
+          // 1. Booking ID generate karo
           const randomNum = Math.floor(100000 + Math.random() * 900000);
           const bookingId = 'ROS-' + randomNum;
           
+          // 2. Form data uthao
           const formData = new FormData(form);
           const data = Object.fromEntries(formData);
+          
+          // 3. Data me Booking ID add karo taaki mail me dikhe
           data.bookingId = bookingId;
           
           const submitButton = form.querySelector('button[type="submit"]');
@@ -447,7 +462,8 @@ import Layout from '../layouts/Layout.astro';
           submitButton.innerText = "Booking...";
           submitButton.disabled = true;
 
-          fetch("https://formsubmit.co/ajax/Rocarebangalorero@gmail.com", {
+          // 4. Web3Forms par data bhejo
+          fetch("https://api.web3forms.com/submit", {
             method: "POST",
             headers: {
               'Content-Type': 'application/json',
@@ -457,6 +473,7 @@ import Layout from '../layouts/Layout.astro';
           })
           .then(async (response) => {
             if (response.ok) {
+              // Agar mail chali gayi, toh Thank You page par bhejo Booking ID ke saath
               window.location.href = '/thank-you?bookingId=' + bookingId;
             } else {
               alert("Something went wrong. Please call us directly.");
